@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chạy chương trình jquery</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.0/dist/jquery.validate.min.js"></script>
+	<style type="text/css">
+		.container{
+			height: 600px;
+			width: 600px;
+			margin: auto;
+		}
+		.oco{
+			width: 56px;
+			height: 56px;
+			background-color: yellow;
+			border: solid 2px black;
+			float: left;
+			text-align: center;
+			font-size: 48px;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<button class="hide">hide</button>
+		<button class="show">show</button>
+		<button class="toggle">toggle</button>
+	</div>
+	<div class="container">
+		
+	</div>
+	
+</body>
+<script type="text/javascript">
+	var dem=0;
+	$(document).ready(function(){
+		$("button.hide").click(function(){
+			$(".container").hide(600);
+		});
+		$("button.show").click(function(){
+			$(".container").show(600);
+		});
+		$("button.toggle").click(function(){
+			$(".container").toggle(600);
+		});
+		for (var i = 1; i <= 100; i++) {
+			$(".container").append("<div class='oco'></div>");
+		}
+		var i=0;
+		$('.oco').each(function(){
+		    i++;
+		    var newID=i;
+		    $(this).attr('id',newID);
+		    $(this).val(i);
+		});
+		//$("#1").html('O');
+		// $(".oco").each(function(index,value){
+		// 	if ($(this).val()=="") {
+		// 		$(".oco").click(function(){
+		// 			$(this).html('O');
+		// 		});
+		// 	}
+		// });
+		
+		$(".oco").click(function(){
+			var idcurrent = $(this).attr('id');
+			var listid= [parseFloat(idcurrent), parseFloat(idcurrent)-1, parseFloat(idcurrent)+1 ,parseFloat(idcurrent)-9, parseFloat(idcurrent)-10, idcurrent-11, parseFloat(idcurrent)+9, parseFloat(idcurrent)+10,parseFloat(idcurrent)+11];
+			//var test = idcurrent - 1;
+			//alert(test);
+			//alert(listid);
+			for (var i = 0; i < listid.length; i++) {
+				//alert($("#"+listid[i]).html());
+				if(dem==0){
+					$(this).html('X');
+					dem = dem + 1;	
+				}
+				if ($(this).html()==""&&($("#"+listid[i]).html()!=="")){
+					dem = dem + 1;	
+					
+					if(dem%2==1)
+					{
+						$(this).html('X');
+					}
+					else{
+						$(this).html('O');
+					}
+
+				}
+			}
+			
+		});
+	});
+</script>
+</html>

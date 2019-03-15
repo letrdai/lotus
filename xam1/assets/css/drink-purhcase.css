@@ -1,0 +1,97 @@
+@font-face {
+  font-family: letrdai;
+  src: url("../fonts/Fakt-SemiBold.otf"); }
+@font-face {
+  font-family: font_1;
+  src: url("../fonts/Fakt-Bold.otf"); }
+.container {
+  width: 100%;
+  height: 790px;
+  font-family: font_1;
+  color: white; }
+  .container .header {
+    height: 15%;
+    background-image: url("../img/gradient-bg.svg");
+    width: 100%; }
+    .container .header .logo img {
+      width: 20%;
+      padding-left: 100px;
+      padding-top: 10px; }
+    .container .header p {
+      color: white;
+      padding-left: 100px;
+      font-size: 45px; }
+  .container .content {
+    height: 80%;
+    background-color: #01102d; }
+    .container .content .item .image {
+      padding-top: 150px;
+      padding-bottom: 100px;
+      padding-left: 100px; }
+      .container .content .item .image p {
+        text-align: center;
+        padding-right: 50px;
+        text-decoration: none;
+        color: white; }
+      .container .content .item .image .hover {
+        position: relative;
+        height: 100%; }
+      .container .content .item .image .hover:hover .overlay {
+        opacity: 1;
+        background-color: none; }
+      .container .content .item .image .hover:hover img {
+        opacity: 0.2;
+        background-color: none; }
+      .container .content .item .image .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 92%;
+        width: 80%;
+        opacity: 0;
+        transition: .5s ease; }
+        .container .content .item .image .overlay .text {
+          color: #10C376;
+          font-size: 50px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+          text-align: center; }
+    .container .content .item img {
+      width: 80%;
+      display: block;
+      height: auto; }
+  .container .total {
+    padding-top: 50px;
+    background-color: #01102D;
+    height: 15%;
+    width: 100%;
+    right: 0; }
+    .container .total .cnt {
+      float: right;
+      font-size: 25px;
+      padding-right: 50px; }
+    .container .total .button {
+      margin-left: 10px;
+      padding: 10px 20px 10px 20px;
+      color: white;
+      font-size: 35px;
+      font-weight: normal;
+      border-radius: 8px;
+      background-color: #0CC063;
+      border: solid #0CC063;
+      width: 150px;
+      height: 50px;
+      text-decoration: none; }
+      .container .total .button .button {
+        cursor: pointer; }
+
+* {
+  margin: 0px; }
+
+/*# sourceMappingURL=drink-purhcase.css.map */

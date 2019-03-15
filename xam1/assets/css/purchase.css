@@ -1,0 +1,172 @@
+@font-face {
+  font-family: letrdai;
+  src: url("../fonts/Fakt-SemiBold.otf"); }
+@font-face {
+  font-family: font_1;
+  src: url("../fonts/Fakt-Bold.otf"); }
+.container {
+  width: 100%;
+  height: 790px;
+  font-family: font_1;
+  color: white; }
+  .container .header {
+    height: 15%;
+    background-image: url("../img/gradient-bg.svg"); }
+    .container .header .logo img {
+      width: 5%;
+      padding-left: 100px;
+      padding-top: 10px; }
+    .container .header p {
+      color: white;
+      padding-left: 100px;
+      font-size: 45px; }
+  .container .content {
+    height: 671.5 px;
+    background-color: #29384F;
+    width: 100%; }
+    .container .content p {
+      padding-left: 100px;
+      padding-top: 25px;
+      font-size: 35px; }
+      .container .content p .border1:after {
+        content: "";
+        display: block;
+        height: 70px;
+        background-image: url(../img/gradient-bg.svg);
+        background-repeat: no-repeat;
+        background-position: center bottom; }
+    .container .content hr {
+      width: 350px;
+      border-width: 2px;
+      border-color: #0DC166; }
+    .container .content img {
+      height: 2px;
+      width: 25%; }
+    .container .content .scroll {
+      width: 100%;
+      overflow-y: auto;
+      height: 450px;
+      padding-top: 50px; }
+    .container .content table {
+      padding-right: 100px;
+      padding-left: 100px;
+      font-size: 30px;
+      width: 100%; }
+      .container .content table th, .container .content table td {
+        padding-right: 20%;
+        padding-left: 50px;
+        padding-top: 10px;
+        padding-bottom: 10px; }
+      .container .content table button {
+        font-size: 25px;
+        border-radius: 5px;
+        background-color: white;
+        border: solid white;
+        width: 100px;
+        padding-right: 0px !important;
+        font-weight: bold;
+        font-family: font_1; }
+    .container .content .total {
+      padding-top: 50px;
+      background-color: #01102D;
+      height: 100px;
+      width: 100%;
+      right: 0; }
+      .container .content .total .cnt {
+        float: right; }
+      .container .content .total .button {
+        margin-left: 10px;
+        padding: 10px 20px 10px 20px;
+        color: white;
+        font-size: 35px;
+        font-weight: normal;
+        border-radius: 8px;
+        background-color: #0CC063;
+        border: solid #0CC063;
+        width: 150px;
+        height: 50px;
+        text-decoration: none; }
+        .container .content .total .button .button {
+          cursor: pointer; }
+      .container .content .total .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.5);
+        transition: opacity 500ms;
+        visibility: hidden;
+        opacity: 0; }
+        .container .content .total .overlay .cancel {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          cursor: default; }
+        .container .content .total .overlay:target {
+          visibility: visible;
+          opacity: 1; }
+      .container .content .total .popup {
+        padding-top: 100px;
+        margin: 75px auto;
+        width: 800px;
+        position: relative; }
+        .light .container .content .total .popup {
+          border-color: #aaa;
+          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25); }
+        .container .content .total .popup h2 {
+          margin-top: 0;
+          color: #666;
+          font-family: "Trebuchet MS", Tahoma, Arial, sans-serif; }
+        .container .content .total .popup .close {
+          position: absolute;
+          width: 20px;
+          height: 20px;
+          top: 20px;
+          right: 20px;
+          opacity: 0.8;
+          transition: all 200ms;
+          font-size: 24px;
+          font-weight: bold;
+          text-decoration: none;
+          color: #666; }
+          .container .content .total .popup .close:hover {
+            opacity: 1; }
+        .container .content .total .popup .content {
+          position: absolute;
+          text-align: center;
+          height: 400px;
+          overflow: auto;
+          padding: 0px;
+          margin: 0px;
+          border-radius: 20px; }
+          .container .content .total .popup .content input {
+            background-color: #475367;
+            border: #475367;
+            border-radius: 8px;
+            height: 40px;
+            width: 500px; }
+        .container .content .total .popup p {
+          padding: 70px;
+          margin: 0px; }
+          .container .content .total .popup p:last-child {
+            margin: 0; }
+
+::-webkit-scrollbar {
+  width: 30px; }
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #555555;
+  border-radius: 5px; }
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888888;
+  border-radius: 5px; }
+
+/* Handle on hover */
+* {
+  margin: 0px; }
+
+/*# sourceMappingURL=purchase.css.map */

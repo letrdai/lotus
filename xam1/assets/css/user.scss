@@ -1,0 +1,41 @@
+@font-face{
+	font-family: letrdai;
+	src:url('../fonts/Fakt-SemiBold.otf');
+}
+@font-face{
+	font-family: font_1;
+	src:url('../fonts/Fakt-Bold.otf');
+}
+$height: 790px;
+body{
+	background-image: url("../img/gradient-bg.svg");
+}
+.wrapper{
+	text-align: center;
+	font-family: font_1;
+	color: white;
+	.logo1{
+		padding-bottom: 5%;
+		padding-top:3%;
+		img{
+			width: 10%;
+		}
+	}
+	.content{
+		.gr{
+			font-size: 45px;
+			padding-top: 0px;
+			margin-top: 0px;
+		}
+		p{
+			padding: 10px;
+			font-size: 23px;
+		}
+	}
+	.logo2{
+		img{
+			width: 12%;
+		}
+	}
+
+}

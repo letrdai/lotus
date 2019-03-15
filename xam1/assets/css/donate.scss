@@ -1,0 +1,88 @@
+@font-face{
+	font-family: letrdai;
+	src:url('../fonts/Fakt-SemiBold.otf');
+}
+@font-face{
+	font-family: font_1;
+	src:url('../fonts/Fakt-Bold.otf');
+}
+.container{
+	height: 790px;
+	position: center;
+	text-align: center;
+
+	.content{
+		//height: 85%;
+		margin-left: 20px;
+		.cnt-left{
+			//padding-left: 100px;
+			.cnt{
+				padding-top: 7%;
+				img{
+					width: 50%;
+				}
+				h1{
+
+					font-weight: bold;
+					font-size: 2vw;
+				}
+				p{
+					font-size: 1vw;
+				}
+			}
+		}
+		.cnt-right{
+			background-color: #00112C;
+			color: white;
+			.title{
+				font-size: 1.3vw;
+			}
+			img{
+				width: 60%;
+				text-align: center;
+				max-width: 90%;
+				height: auto;
+				margin-left: auto;
+				margin-right: auto;
+				display: block;
+				padding-top: 50px;
+			}
+			hr{
+				border-top: 2px solid white;
+			}
+			.donation{
+				p{
+					font-size: 1vw;
+				}
+			}
+			.total{
+				
+				text-align: center;
+				padding:0;
+				h1{
+					font-weight: bold;
+					font-size: 4vw;
+				}
+				p{
+					font-size:  1vw;
+				}
+			}
+		}
+	}
+	.footer{
+		margin-left: 15px;
+		background-image: url("../img/footer.svg");
+		background-size: cover;
+		position: relative;
+		height: 13%;
+		width:100%;
+		
+		padding: 0;
+		// -webkit-background-size: cover;
+		// -moz-background-size: cover;
+
+	}
+}
+*{
+	
+}

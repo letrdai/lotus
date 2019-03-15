@@ -1,0 +1,44 @@
+@font-face {
+  font-family: letrdai;
+  src: url("../fonts/Fakt-SemiBold.otf"); }
+@font-face {
+  font-family: font_1;
+  src: url("../fonts/Fakt-Bold.otf"); }
+body {
+  background-image: url("../img/gradient-bg.svg"); }
+
+.wrapper {
+  text-align: center;
+  font-family: font_1;
+  color: white; }
+  .wrapper .logo1 {
+    padding-bottom: 5%;
+    padding-top: 3%; }
+    .wrapper .logo1 img {
+      width: 10%; }
+  .wrapper .content .gr {
+    font-size: 45px;
+    padding-top: 0px;
+    margin-top: 0px;
+    font-weight: bold; }
+  .wrapper .content p {
+    padding: 0px;
+    font-size: 23px; }
+  .wrapper .logo2 img {
+    width: 12%; }
+
+.wrapper .navigation {
+  height: 100px;
+  font-family: font_1;
+  text-align: left; }
+  .wrapper .navigation p {
+    font-weight: bold; }
+  .wrapper .navigation a {
+    padding-left: 50px;
+    padding-top: 10px;
+    color: white;
+    text-decoration: none; }
+.wrapper .logonew img {
+  width: 15%; }
+
+/*# sourceMappingURL=thanks.css.map */

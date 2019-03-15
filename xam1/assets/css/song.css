@@ -1,0 +1,58 @@
+@font-face {
+  font-family: letrdai;
+  src: url("../fonts/Fakt-SemiBold.otf"); }
+@font-face {
+  font-family: font_1;
+  src: url("../fonts/Fakt-Bold.otf"); }
+.container {
+  height: 790px;
+  position: center;
+  text-align: center; }
+  .container .content {
+    margin-left: 20px; }
+    .container .content .cnt-left .cnt {
+      text-align: left;
+      padding-top: 6%; }
+      .container .content .cnt-left .cnt img {
+        width: 50%; }
+      .container .content .cnt-left .cnt h1 {
+        font-weight: bold;
+        font-size: 2vw; }
+      .container .content .cnt-left .cnt p {
+        font-size: 2vw; }
+    .container .content .cnt-right {
+      background-color: #00112C;
+      color: white; }
+      .container .content .cnt-right .title {
+        font-size: 1.3vw; }
+      .container .content .cnt-right img {
+        width: 60%;
+        text-align: center;
+        max-width: 90%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        padding-top: 50px; }
+      .container .content .cnt-right hr {
+        border-top: 2px solid white; }
+      .container .content .cnt-right .donation p {
+        font-size: 1vw; }
+      .container .content .cnt-right .total {
+        text-align: center;
+        padding: 0; }
+        .container .content .cnt-right .total h1 {
+          font-weight: bold;
+          font-size: 4vw; }
+        .container .content .cnt-right .total p {
+          font-size: 1vw; }
+  .container .footer {
+    margin-left: 15px;
+    background-image: url("../img/footer.svg");
+    background-size: cover;
+    position: relative;
+    height: 13%;
+    width: 100%;
+    padding: 0; }
+
+/*# sourceMappingURL=song.css.map */
