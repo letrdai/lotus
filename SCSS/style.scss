@@ -1,0 +1,35 @@
+$color_a_hover: #3C74B8;
+.class_1 {
+	color: #f94342;
+	font-weight: bold;
+	padding: 15px;
+	margin: 5px;
+	a {
+		color: #fff;
+		text-decoration: underline;
+		a:hover,a:visited {
+		color: $color_a_hover;
+		text-decoration: none;
+		}
+	}
+}
+@mixin insert{
+	font-size: 13px;
+    font-weight: bold;
+    color: red;
+}
+.ex {
+	@include insert;
+	padding: 69px;
+	margin: 60px;
+}
+
+.message{
+	color: #f94342;
+	font-weight: bold;
+	padding: 15px;
+}
+.success{
+	@extend	 .message;
+	border-color: green;
+}

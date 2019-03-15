@@ -1,0 +1,28 @@
+.class_1 {
+  color: #f94342;
+  font-weight: bold;
+  padding: 15px;
+  margin: 5px; }
+  .class_1 a {
+    color: #fff;
+    text-decoration: underline; }
+    .class_1 a a:hover, .class_1 a a:visited {
+      color: #3C74B8;
+      text-decoration: none; }
+
+.ex {
+  font-size: 13px;
+  font-weight: bold;
+  color: red;
+  padding: 69px;
+  margin: 60px; }
+
+.message, .success {
+  color: #f94342;
+  font-weight: bold;
+  padding: 15px; }
+
+.success {
+  border-color: green; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,25 @@
+@font-face {
+  font-family: amafont;
+  src: url("font/Montserrat-ExtraLight.otf"); }
+* {
+  margin: 0px;
+  padding: 0px; }
+
+.container {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  height: 1080px; }
+  .container .header .social {
+    padding-left: 100px;
+    background-color: #DB1D42;
+    height: 40px;
+    color: white; }
+    .container .header .social a {
+      color: white;
+      text-decoration: none; }
+    .container .header .social ul {
+      float: left;
+      font-family: amafont; }
+
+/*# sourceMappingURL=style.css.map */
